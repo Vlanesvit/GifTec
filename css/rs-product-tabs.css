@@ -1,0 +1,288 @@
+@charset "UTF-8";
+.rs-product-tabs {
+  padding-bottom: 100px;
+}
+@media (max-width: 1439.98px) {
+  .rs-product-tabs {
+    padding-bottom: 83.3333333333px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-product-tabs {
+    padding-bottom: 66.6666666667px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-product-tabs {
+    padding-bottom: 50px;
+  }
+}
+.rs-product-tabs__tabs {
+  border-radius: 27px;
+  padding: 30px;
+  background: #f0f0f0;
+}
+@media (max-width: 1439.98px) {
+  .rs-product-tabs__tabs {
+    padding: 26.6666666667px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-product-tabs__tabs {
+    padding: 23.3333333333px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-product-tabs__tabs {
+    padding: 20px;
+  }
+}
+.rs-product-tabs__tabs .tabs__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  padding: 0px 16px;
+  margin: 0px -16px;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+@media (max-width: 1439.98px) {
+  .rs-product-tabs__tabs .tabs__navigation {
+    gap: 21.3333333333px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-product-tabs__tabs .tabs__navigation {
+    gap: 18.6666666667px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-product-tabs__tabs .tabs__navigation {
+    gap: 16px;
+  }
+}
+.rs-product-tabs__tabs .tabs__navigation::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+.rs-product-tabs__tabs .tabs__title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 16px;
+  color: #0b1525;
+  padding: 17px 30px;
+  border-radius: 15px;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+@media (max-width: 1439.98px) {
+  .rs-product-tabs__tabs .tabs__title {
+    font-size: 15.3333333333px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-product-tabs__tabs .tabs__title {
+    font-size: 14.6666666667px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-product-tabs__tabs .tabs__title {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1439.98px) {
+  .rs-product-tabs__tabs .tabs__title {
+    padding-top: 14px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-product-tabs__tabs .tabs__title {
+    padding-top: 11px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-product-tabs__tabs .tabs__title {
+    padding-top: 8px;
+  }
+}
+@media (max-width: 1439.98px) {
+  .rs-product-tabs__tabs .tabs__title {
+    padding-right: 25.3333333333px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-product-tabs__tabs .tabs__title {
+    padding-right: 20.6666666667px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-product-tabs__tabs .tabs__title {
+    padding-right: 16px;
+  }
+}
+@media (max-width: 1439.98px) {
+  .rs-product-tabs__tabs .tabs__title {
+    padding-bottom: 14px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-product-tabs__tabs .tabs__title {
+    padding-bottom: 11px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-product-tabs__tabs .tabs__title {
+    padding-bottom: 8px;
+  }
+}
+@media (max-width: 1439.98px) {
+  .rs-product-tabs__tabs .tabs__title {
+    padding-left: 25.3333333333px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-product-tabs__tabs .tabs__title {
+    padding-left: 20.6666666667px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-product-tabs__tabs .tabs__title {
+    padding-left: 16px;
+  }
+}
+.rs-product-tabs__tabs .tabs__title._tab-active {
+  background-color: #0776a1;
+  color: #fff;
+}
+.rs-product-tabs__tabs .tabs__content {
+  padding-top: 24px;
+}
+.rs-product-tabs__tabs .tabs__body {
+  opacity: 0;
+  display: none;
+  -webkit-transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-behavior: allow-discrete;
+}
+.rs-product-tabs__tabs .tabs__body._tab-active {
+  display: block;
+  opacity: 1;
+}
+@starting-style {
+  .rs-product-tabs__tabs .tabs__body._tab-active {
+    opacity: 0;
+  }
+}
+.rs-product-tabs__tabs .tabs__body > *:first-child {
+  margin-top: 0px !important;
+}
+.rs-product-tabs__tabs .tabs__body > *:last-child {
+  margin-bottom: 0px !important;
+}
+.rs-product-tabs__tabs .tabs__body p {
+  margin: 10px 0px;
+}
+.rs-product-tabs__tabs .tabs__body ul {
+  margin: 8px 0px;
+}
+.rs-product-tabs__tabs .tabs__body ul li {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 159%;
+  letter-spacing: 0.03em;
+  color: #282828;
+  padding-left: 27px;
+  position: relative;
+}
+@media (max-width: 1439.98px) {
+  .rs-product-tabs__tabs .tabs__body ul li {
+    font-size: 15.3333333333px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-product-tabs__tabs .tabs__body ul li {
+    font-size: 14.6666666667px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-product-tabs__tabs .tabs__body ul li {
+    font-size: 14px;
+  }
+}
+.rs-product-tabs__tabs .tabs__body ul li::before {
+  content: "•";
+  position: absolute;
+  top: 0;
+  left: 9px;
+  width: 6px;
+  height: 6px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+@media (max-width: 767.98px) {
+  .rs-product-tabs__table {
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+  .rs-product-tabs__table::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+  }
+}
+.rs-product-tabs__table table {
+  width: 100%;
+  border-collapse: unset;
+  border-spacing: 0px 8px;
+  table-layout: fixed;
+}
+@media (max-width: 767.98px) {
+  .rs-product-tabs__table table {
+    min-width: 500px;
+  }
+}
+.rs-product-tabs__table table tr td {
+  padding: 20px;
+  font-size: 16px;
+  line-height: 156%;
+  color: #0b1525;
+  background: #fff;
+}
+@media (max-width: 1599.98px) {
+  .rs-product-tabs__table table tr td {
+    font-size: 15.5px;
+  }
+}
+@media (max-width: 1439.98px) {
+  .rs-product-tabs__table table tr td {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-product-tabs__table table tr td {
+    font-size: 14.5px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-product-tabs__table table tr td {
+    font-size: 14px;
+  }
+}
+.rs-product-tabs__table table tr td:first-child {
+  font-weight: 600;
+  border-radius: 20px 0 0 20px;
+}
+@media (min-width: 1169.98px) {
+  .rs-product-tabs__table table tr td:first-child {
+    width: 419px;
+  }
+}
+.rs-product-tabs__table table tr td:last-child {
+  font-weight: 300;
+  border-left: 1px solid #dedede;
+  border-radius: 0 20px 20px 0;
+}

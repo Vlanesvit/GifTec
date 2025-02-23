@@ -1,0 +1,66 @@
+@import "../base/_mixin";
+
+.rs-about {
+	position: relative;
+	padding-top: 117px;
+
+	@include responsive-auto(padding-top, (117, 50), (1439.98, 1169.98, 991.98));
+
+	// .rs-about__bg
+	&__bg {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: -1;
+
+		@media (min-width: 1925px) {
+			width: 100%;
+		}
+
+		img {
+			max-width: unset;
+			object-fit: cover;
+			object-position: center;
+
+			@media (min-width: 1925px) {
+				width: 100%;
+			}
+		}
+	}
+
+	// .rs-about__container
+	&__container {
+	}
+
+	// .rs-about__wrapper
+	&__wrapper {
+	}
+
+	// .rs-about__desc
+	&__desc {
+		color: #fff;
+
+		h2 {
+			font-weight: 800;
+			font-size: 61px;
+			letter-spacing: 0.03em;
+			text-transform: uppercase;
+			margin-bottom: 42px;
+
+			@include responsive-auto(font-size, (61, 24), (1439.98, 1169.98, 991.98));
+			@include responsive-auto(margin-bottom, (42, 20), (1439.98, 1169.98, 991.98));
+		}
+
+		h4 {
+			margin: 11px 0px;
+			font-weight: 300;
+			// line-height: 40px;
+			line-height: 159%;
+		}
+
+		.rs-btn {
+			margin-top: 20px;
+		}
+	}
+}

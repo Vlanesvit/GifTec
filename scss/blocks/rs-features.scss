@@ -1,0 +1,131 @@
+@import "../base/_mixin";
+
+.rs-features {
+	padding: 100px 0px 104px;
+
+	@include responsive-auto(padding-top, (100, 50), (1439.98, 1169.98, 991.98));
+	@include responsive-auto(padding-bottom, (104, 50), (1439.98, 1169.98, 991.98));
+
+	// .rs-features__container
+	&__container {
+	}
+
+	// .rs-features__head
+	&__head {
+	}
+
+	// .rs-features__wrapper
+	&__wrapper {
+		margin-top: 58px;
+
+		@include responsive-auto(margin-top, (58, 20), (1439.98, 1169.98, 991.98));
+	}
+
+	// .rs-features__list
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 30px;
+
+		@media (max-width: 1169.98px) {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 20px;
+		}
+
+		@media (max-width: 767.98px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	// .rs-features__item
+	&__item {
+		padding: 30px;
+		border-radius: 27px;
+		backdrop-filter: blur(31.100000381469727px);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		@media (min-width: 767.98px) {
+			min-height: 327px;
+		}
+
+		@media (max-width: 1439.98px) {
+			padding: 20px;
+		}
+
+		&:nth-child(1),
+		&:nth-child(5n) {
+			color: #fff;
+			background-color: #0996cd;
+		}
+
+		&:nth-child(2),
+		&:nth-child(6n) {
+			color: #fff;
+			background-color: #12233d;
+
+			.rs-features__icon {
+				background-color: #fff;
+			}
+		}
+
+		&:nth-child(3),
+		&:nth-child(7n) {
+			background-color: #e5e5e5;
+
+			.rs-features__icon {
+				background-color: rgba($color: #0996cd, $alpha: 0.2);
+			}
+		}
+
+		&:nth-child(4),
+		&:nth-child(8n) {
+			color: #fff;
+			background-color: #0996cd;
+
+			.rs-features__icon {
+				background-color: #fff;
+			}
+		}
+	}
+
+	// .rs-features__desc
+	&__desc {
+		margin-bottom: 20px;
+
+		p {
+			margin-top: 10px;
+			letter-spacing: 0px;
+			line-height: normal;
+
+			@include responsive-auto(font-size, (16, 14), (1439.98, 1169.98, 991.98));
+		}
+	}
+
+	// .rs-features__num
+	&__num {
+		font-weight: 500;
+		font-size: 80px;
+		// line-height: 88px;
+		line-height: 110%;
+		color: #fff;
+		margin-bottom: -10px;
+
+		@include responsive-auto(font-size, (80, 40), (1439.98, 1169.98, 991.98));
+		@include responsive-auto(margin-bottom, (-10, 0), (1439.98, 1169.98, 991.98));
+	}
+
+	// .rs-features__icon
+	&__icon {
+		width: 56px;
+		height: 56px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+
+		@include responsive-auto(width, (56, 45), (1439.98, 1169.98, 991.98));
+		@include responsive-auto(height, (56, 45), (1439.98, 1169.98, 991.98));
+	}
+}

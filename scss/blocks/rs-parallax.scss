@@ -1,0 +1,62 @@
+@import "../base/_mixin";
+
+.rs-parallax {
+	padding: 194px 0px;
+	position: relative;
+	border-radius: 27px;
+	overflow: hidden;
+
+	@include responsive-auto(padding-top, (194, 50), (1439.98, 1169.98, 991.98));
+	@include responsive-auto(padding-bottom, (194, 50), (1439.98, 1169.98, 991.98));
+
+	// .rs-parallax__bg
+	&__bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	// .rs-parallax__container
+	&__container {
+	}
+
+	// .rs-parallax__content
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	// .rs-parallax__body
+	&__body {
+		color: #fff;
+		text-align: center;
+		max-width: 1279px;
+
+		h2 {
+			line-height: 141%;
+		}
+
+		.rs-btn {
+			margin-top: 40px;
+
+			@include responsive-auto(margin-top, (40, 20), (1439.98, 1169.98, 991.98));
+		}
+	}
+
+	// .rs-parallax__head
+	&__head {
+		.subtitle {
+			color: #fff;
+		}
+	}
+}
