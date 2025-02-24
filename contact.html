@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="lib/fancybox/fancybox.css">
 	<link rel="stylesheet" href="lib/aos/aos.css">
 	<link rel="stylesheet" href="css/rs-style.css" />
-	<title>Услуги | GifTec</title>
+	<title>Контакты | GifTec</title>
 </head>
 
 <body>
@@ -282,584 +282,145 @@
 		<main class="page">
 
 			<link rel="stylesheet" href="css/rs-services.css">
+			<script>
+				// Данные каждого маркера
+				const branchData = [
+					{
+						address: 'Адрес: 195196, г. Санкт-Петербург, ул. Таллинская, д. 7, лит. Ц (БЦ «Громов», вход с ул. Громова, д. 4)',
+						location: [59.921430, 30.412117],
+					},
+					{
+						address: 'Адрес: Склад Деловые Линии Парнас, г. Санкт-Петербург, ул. Латышских Стрелков, д. 31В',
+						location: [59.934921, 30.453858],
+					},
+					{
+						address: 'Адрес: Московская область, г. Одинцово, ул. Железнодорожная, д. 3',
+						location: [55.665969, 37.255003],
+					},
+					{
+						address: 'Адрес: Свердловская область, г. Екатеринбург, ул. Новинская, д. 17А',
+						location: [56.768334, 60.626274],
+					},
+					{
+						address: 'Адрес: Новосибирская область, г. Новосибирск, ул. Сухарная, д. 35, к. 11',
+						location: [55.044552, 82.869980],
+					},
+				]
+			</script>
+			<script
+				src="https://api-maps.yandex.ru/2.1/?apikey=38863ba5-9462-46dc-940c-d9fed985abff&lang=ru_RU"></script>
 			<section class="rs-services">
 				<div class="rs-services__container">
 					<div class="rs-services__head">
-						<h2>Наши услуги</h2>
+						<h2>Контакты</h2>
 					</div>
 
-					<div class="rs-services__block">
-						<div data-tabs class="rs-services__tabs tabs">
-							<nav data-tabs-titles class="tabs__navigation">
-								<button type="button" class="tabs__title">Проверка дорожных знаков</button>
-								<button type="button" class="tabs__title">Цифровая печать дорожных знаков</button>
-								<button type="button" class="tabs__title">Резка плёнки</button>
-								<button type="button" class="tabs__title">Ремонт и инсталляция оборудования</button>
-							</nav>
-							<div data-tabs-body class="tabs__content">
-								<div class="tabs__body">
-									<div class="rs-services__wrapper">
-										<div class="rs-services__item">
-											<div class="rs-services__desc">
-												<h3>Проверка дорожных знаков</h3>
-												<p>Располагая необходимыми ресурсами и техническими средствами
-													измерений, имеющими необходимую поверку, GIFTEC REFLECTION
-													предоставляет следующие виды услуг:</p>
-												<ul>
-													<li>проверка дорожных знаков на соответствие ГОСТ Р 52290-2004 и
-														ГОСТ 32945-2014;</li>
-													<li>оценка толщины цинкового покрытия.</li>
-												</ul>
-												<p>Комплекс услуг проверки дорожных знаков включает:</p>
-												<ul>
-													<li>выезд специалиста на место проведения проверки;</li>
-													<li>осуществление замеров световозврата и колориметрии
-														светоотражащих плёнок в присутствии заказчика с использованием
-														сертифицированных и поверенных приборов;</li>
-													<li>оценка соответствия полученных показателей требованиям ГОСТ и
-														технических заданий;</li>
-													<li>анализ выявленных в процессе проведения проверки отклонений от
-														норм;</li>
-													<li>выдача заключений и рекомендаций по повышению качества дорожных
-														знаков.</li>
-												</ul>
-												<p>Одной из наиболее важных составляющих успешной деятельности
-													специалиста ТСОДД является квалификация и знание тонкостей
-													применения стандартов Технического регламента Таможенного союза ТР
-													ТС. Мы гарантируем профессионализм и компетентность наших
-													специалистов. В своей работе мы ориентируемся на принципы взаимной
-													ответственности, долгосрочного сотрудничества и стремимся к
-													повышению уровня дорожного хозяйства России в целом.</p>
-											</div>
-										</div>
-										<div class="rs-services__item">
-											<div class="rs-services__form form">
-												<h6>Уточнить условия предоставления услуг можно по телефону: <a
-														href="tel:88122441622">8 (812) 244-16-22</a> или написав на
-													почту специалисту отдела контроля качества
-													ТСОДД компании GIFTEC REFLECTION: <a
-														href="mailto:o.nedyalkova@giftec.ru">o.nedyalkova@giftec.ru</a>
-												</h6>
-												<h4>Оставьте заявку на расчёт стоимости</h4>
-												<form action="#" method="post" class="form__form">
-													<div class="form__wrapper">
-														<div class="form__block">
-															<div class="form__line">
-																<input type="text" name="form[]" required
-																	class="rs-input" placeholder="Имя">
-															</div>
-															<div class="form__line">
-																<input type="tel" name="form[]" required
-																	class="rs-input" placeholder="Телефон">
-															</div>
-															<div class="form__line">
-																<input type="email" name="form[]" required
-																	class="rs-input" placeholder="E-mail">
-															</div>
-															<div class="form__line">
-																<textarea name="form[]" class="rs-input"
-																	placeholder="Введите ваше сообщение"></textarea>
-															</div>
-
-															<div class="form__footer">
-																<div class="form__agreement">
-																	Нажимая кнопку «Получить прайс-лист» вы даете
-																	согласие на обработку персональных данных в
-																	соответствии с <a href="#">пользовательским
-																		соглашением</a>.
-																</div>
-																<div class="form__button">
-																	<button type="submit"
-																		class="rs-btn _btn-primary">Получить
-																		прайс</button>
-																</div>
-															</div>
-														</div>
-													</div>
-												</form>
-											</div>
-										</div>
-									</div>
-
-									<div class="rs-services__gallery">
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery1">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery1">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery1">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery1">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery1">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery1">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery1">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery1">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-									</div>
+					<div class="rs-services__wrapper">
+						<div class="rs-services__item">
+							<div class="rs-services__desc">
+								<div class="rs-services__part">
+									<h4>Центральный офис, г. Санкт-Петербург</h4>
+									<ul>
+										<li>Адрес: <a href="#" class="map-link" data-index="0">195196,
+												г. Санкт-Петербург,
+												ул. Таллинская, д. 7, лит.
+												Ц (БЦ «Громов», вход с ул. Громова, д. 4)</a></li>
+										<li>Телефон: <a href="tel:78122441622">+7 812 244-16-22</a> (многоканальный)
+										</li>
+										<li>Факс: <a href="tel:78122441623">+7 812 244-16-23</a></li>
+										<li>Электронная почта: <a href="mailto:sale@giftec.ru">sale@giftec.ru</a></li>
+									</ul>
 								</div>
-
-								<div class="tabs__body">
-									<div class="rs-services__wrapper">
-										<div class="rs-services__item">
-											<div class="rs-services__desc">
-												<h3>Цифровая печать дорожных знаков</h3>
-												<p>Являясь официальным дистрибьютором Avery Dennison уже более 5 лет,
-													наша компания продвигает и развивает технологии цифровой печати
-													дорожных знаков на территории России и стран Таможенного союза. В
-													Санкт-Петербурге мы организовали современный шоу-рум, в котором
-													представлены основные единицы оборудования, использующиеся в линии
-													цифровой печати дорожных знаков.
-												</p>
-												<p>Имея все необходимое для оперативной и качественной печати дорожных
-													знаков, соответствующих требованиям ГОСТ, мы предлагаем нашим
-													партнёрам услуги по полному или частичному выполнению их заказов:
-												</p>
-												<ul>
-													<li>печать масок дорожных знаков;</li>
-													<li>печать дорожных указателей;</li>
-													<li>печать знаков индивидуального проектирования (ЗИП).</li>
-												</ul>
-												<p>Также оказываются услуги по резке масок из рулона, резке
-													светоотражателей для катафотов (КД1, КД2, КД3, КД4, КД5 и КД6), как
-													из нашего, так и давальческого сырья.
-													Помимо типовых знаков и указателей, возможна печать:
-												</p>
-												<ul>
-													<li>информационных щитов на светоотражающих материалах;</li>
-													<li>паспортов объектов;
-													</li>
-													<li>знаков туристской и рекреационной навигации;</li>
-													<li>этикеток дорожных знаков.
-													</li>
-												</ul>
-												<p>Каждый заказ выполняется с соблюдением требований технологии и
-													требований ГОСТ. Готовые заказы отправляются транспортной компанией.
-													По договорённости возможна срочная доставка.
-												</p>
-												<p>Получить всю интересующую информацию и отправить запрос на расчёт
-													можно на e-mail: <a
-														href="mailto:o.nedyalkova@giftec.ru">o.nedyalkova@giftec.ru.</a>
-												</p>
-											</div>
-										</div>
-										<div class="rs-services__item">
-											<div class="rs-services__form form">
-												<h6>Уточнить условия предоставления услуг можно по телефону: <a
-														href="tel:88122441622">8 (812) 244-16-22</a> или написав на
-													почту специалисту отдела контроля качества
-													ТСОДД компании GIFTEC REFLECTION: <a
-														href="mailto:o.nedyalkova@giftec.ru">o.nedyalkova@giftec.ru</a>
-												</h6>
-												<h4>Оставьте заявку на расчёт стоимости</h4>
-												<form action="#" method="post" class="form__form">
-													<div class="form__wrapper">
-														<div class="form__block">
-															<div class="form__line">
-																<input type="text" name="form[]" required
-																	class="rs-input" placeholder="Имя">
-															</div>
-															<div class="form__line">
-																<input type="tel" name="form[]" required
-																	class="rs-input" placeholder="Телефон">
-															</div>
-															<div class="form__line">
-																<input type="email" name="form[]" required
-																	class="rs-input" placeholder="E-mail">
-															</div>
-															<div class="form__line">
-																<textarea name="form[]" class="rs-input"
-																	placeholder="E-mail"></textarea>
-															</div>
-
-															<div class="form__footer">
-																<div class="form__agreement">
-																	Нажимая кнопку «Получить прайс-лист» вы даете
-																	согласие на обработку персональных данных в
-																	соответствии с <a href="#">пользовательским
-																		соглашением</a>.
-																</div>
-																<div class="form__button">
-																	<button type="submit"
-																		class="rs-btn _btn-primary">Получить
-																		прайс</button>
-																</div>
-															</div>
-														</div>
-													</div>
-												</form>
-											</div>
-										</div>
-									</div>
-
-									<div class="rs-services__gallery">
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery2">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery2">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery2">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery2">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery2">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery2">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery2">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery2">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-									</div>
+								<div class="rs-services__part">
+									<h4>Склад в Санкт-Петербурге</h4>
+									<ul>
+										<li>Адрес:
+											<a href="#" class="map-link" data-index="1">Склад Деловые Линии Парнас,
+												г. Санкт-Петербург, ул. Латышских
+												Стрелков, д. 31В</a>
+										</li>
+										<li><strong>Внимание: для самовывоза только 10 и 11 ворота</strong></li>
+										<li><strong>Склад работает до 17:00</strong></li>
+										<li>Груз готовится к отгрузке по предварительной заявке за день
+											до предполагаемой даты забора груза</li>
+										<li><a href="#" download="">Скачать карту проезда</a></li>
+									</ul>
 								</div>
-
-								<div class="tabs__body">
-									<div class="rs-services__wrapper">
-										<div class="rs-services__item">
-											<div class="rs-services__desc">
-												<h3>Резка плёнки</h3>
-												<p>Предлагаем услуги плоттерной резки световозвращающих и других
-													материалов. Работы проводятся на планшетном плоттере с возможностью
-													конвейерной подачи материала. Возможна резка как насквозь, так и до
-													подложки.
-												</p>
-												<p>Наше оборудование позволяет резать любые типы световозвращающих и
-													рекламных пленок, включая заламинированные материалы.
-												</p>
-												<p>Возможности:
-												</p>
-												<ul>
-													<li>резка заготовок для шелкографии;</li>
-													<li>резка катафотов (КД-2, КД-3 и т.д.);</li>
-													<li>резка символов и букв для изготовления знаков индивидуального
-														проектирования;</li>
-													<li>выборка названий для переноса на монтажную пленку;
-													</li>
-													<li>резка по меткам после цифровой печати;</li>
-													<li>резка картона, биговка картона, изготовление небольших тиражей
-														упаковки;</li>
-													<li>резка ткани, в том числе в рулонах.</li>
-												</ul>
-											</div>
-										</div>
-										<div class="rs-services__item">
-											<div class="rs-services__form form">
-												<h6>Уточнить условия предоставления услуг можно по телефону: <a
-														href="tel:88122441622">8 (812) 244-16-22</a> или написав на
-													почту специалисту отдела контроля качества
-													ТСОДД компании GIFTEC REFLECTION: <a
-														href="mailto:o.nedyalkova@giftec.ru">o.nedyalkova@giftec.ru</a>
-												</h6>
-												<h4>Оставьте заявку на расчёт стоимости</h4>
-												<form action="#" method="post" class="form__form">
-													<div class="form__wrapper">
-														<div class="form__block">
-															<div class="form__line">
-																<input type="text" name="form[]" required
-																	class="rs-input" placeholder="Имя">
-															</div>
-															<div class="form__line">
-																<input type="tel" name="form[]" required
-																	class="rs-input" placeholder="Телефон">
-															</div>
-															<div class="form__line">
-																<input type="email" name="form[]" required
-																	class="rs-input" placeholder="E-mail">
-															</div>
-															<div class="form__line">
-																<textarea name="form[]" class="rs-input"
-																	placeholder="E-mail"></textarea>
-															</div>
-
-															<div class="form__footer">
-																<div class="form__agreement">
-																	Нажимая кнопку «Получить прайс-лист» вы даете
-																	согласие на обработку персональных данных в
-																	соответствии с <a href="#">пользовательским
-																		соглашением</a>.
-																</div>
-																<div class="form__button">
-																	<button type="submit"
-																		class="rs-btn _btn-primary">Получить
-																		прайс</button>
-																</div>
-															</div>
-														</div>
-													</div>
-												</form>
-											</div>
-										</div>
-									</div>
-
-									<div class="rs-services__gallery">
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery3">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery3">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery3">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery3">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery3">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery3">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery3">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery3">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-									</div>
+								<div class="rs-services__part">
+									<h4>Склад в Москве</h4>
+									<ul>
+										<li>Адрес: <a href="#" class="map-link" data-index="2">Московская область, г.
+												Одинцово, ул.
+												Железнодорожная, д. 3</a></li>
+									</ul>
 								</div>
-
-								<div class="tabs__body">
-									<div class="rs-services__wrapper">
-										<div class="rs-services__item">
-											<div class="rs-services__desc">
-												<h3>Ремонт и инсталляция оборудования</h3>
-												<p>Обеспечивая наших партнеров технологичными решениями для изготовления
-													дорожных знаков, мы предлагаем не только оборудование, но и полный
-													сервис по запуску и дальнейшему сопровождению станков.
-												</p>
-												<p>Для большинства предлагаемых станков мы максимально оперативно
-													предоставляем:
-												</p>
-												<ul>
-													<li>запуск и инсталляцию оборудования;</li>
-													<li>обучение персонала;</li>
-													<li>гарантийное обслуживание собственной сервисной службой;</li>
-													<li>консультации по оперативным вопросам, связанным с работой
-														оборудования и ответственных сотрудников;</li>
-													<li>поставку запасных частей со склада в Санкт-Петербурге.</li>
-												</ul>
-											</div>
-										</div>
-										<div class="rs-services__item">
-											<div class="rs-services__form form">
-												<h6>Уточнить условия предоставления услуг можно по телефону: <a
-														href="tel:88122441622">8 (812) 244-16-22</a> или написав на
-													почту специалисту отдела контроля качества
-													ТСОДД компании GIFTEC REFLECTION: <a
-														href="mailto:o.nedyalkova@giftec.ru">o.nedyalkova@giftec.ru</a>
-												</h6>
-												<h4>Оставьте заявку на расчёт стоимости</h4>
-												<form action="#" method="post" class="form__form">
-													<div class="form__wrapper">
-														<div class="form__block">
-															<div class="form__line">
-																<input type="text" name="form[]" required
-																	class="rs-input" placeholder="Имя">
-															</div>
-															<div class="form__line">
-																<input type="tel" name="form[]" required
-																	class="rs-input" placeholder="Телефон">
-															</div>
-															<div class="form__line">
-																<input type="email" name="form[]" required
-																	class="rs-input" placeholder="E-mail">
-															</div>
-															<div class="form__line">
-																<textarea name="form[]" class="rs-input"
-																	placeholder="E-mail"></textarea>
-															</div>
-
-															<div class="form__footer">
-																<div class="form__agreement">
-																	Нажимая кнопку «Получить прайс-лист» вы даете
-																	согласие на обработку персональных данных в
-																	соответствии с <a href="#">пользовательским
-																		соглашением</a>.
-																</div>
-																<div class="form__button">
-																	<button type="submit"
-																		class="rs-btn _btn-primary">Получить
-																		прайс</button>
-																</div>
-															</div>
-														</div>
-													</div>
-												</form>
-											</div>
-										</div>
-									</div>
-
-									<div class="rs-services__gallery">
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery4">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery4">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery4">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery4">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery4">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery4">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery4">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-
-										<div class="rs-services__gallery_item">
-											<a href="./img/services_img-1.jpg" class="rs-services__gallery_link"
-												data-fancybox="gallery4">
-												<img src="./img/services_img-1.jpg" alt="">
-											</a>
-										</div>
-									</div>
+								<div class="rs-services__part">
+									<h4>Склад в Екатеринбурге</h4>
+									<ul>
+										<li>Адрес: <a href="#" class="map-link" data-index="3">Свердловская область, г.
+												Екатеринбург, ул. Новинская, д. 17А</a></li>
+									</ul>
+								</div>
+								<div class="rs-services__part">
+									<h4>Склад в Новосибирске</h4>
+									<ul>
+										<li>Адрес: <a href="#" class="map-link" data-index="4">Новосибирская область, г.
+												Новосибирск, ул. Сухарная, д. 35, к. 11</a>
+										</li>
+									</ul>
 								</div>
 							</div>
 						</div>
+						<div class="rs-services__item">
+							<div class="rs-services__form form">
+								<h6>Уточнить условия предоставления услуг можно по телефону: <a href="tel:88122441622">8
+										(812) 244-16-22</a> или написав на
+									почту специалисту отдела контроля качества
+									ТСОДД компании GIFTEC REFLECTION: <a
+										href="mailto:o.nedyalkova@giftec.ru">o.nedyalkova@giftec.ru</a>
+								</h6>
+								<h4>Оставьте заявку на расчёт стоимости</h4>
+								<form action="#" method="post" class="form__form">
+									<div class="form__wrapper">
+										<div class="form__block">
+											<div class="form__line">
+												<input type="text" name="form[]" required class="rs-input"
+													placeholder="Имя">
+											</div>
+											<div class="form__line">
+												<input type="tel" name="form[]" required class="rs-input"
+													placeholder="Телефон">
+											</div>
+											<div class="form__line">
+												<input type="email" name="form[]" required class="rs-input"
+													placeholder="E-mail">
+											</div>
+											<div class="form__line">
+												<textarea name="form[]" class="rs-input"
+													placeholder="Введите ваше сообщение"></textarea>
+											</div>
+
+											<div class="form__footer">
+												<div class="form__agreement">
+													Нажимая кнопку «Получить прайс-лист» вы даете
+													согласие на обработку персональных данных в
+													соответствии с <a href="#">пользовательским
+														соглашением</a>.
+												</div>
+												<div class="form__button">
+													<button type="submit" class="rs-btn _btn-primary">Получить
+														прайс</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<div class="rs-services__map">
+						<div class="map" id="map"></div>
 					</div>
 				</div>
 			</section>
