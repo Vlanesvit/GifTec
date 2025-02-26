@@ -70,6 +70,7 @@
 				display: none;
 				transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 				transition-behavior: allow-discrete;
+				color: #282828;
 
 				&._tab-active {
 					display: block;

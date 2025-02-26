@@ -459,7 +459,8 @@
 									</div>
 									<div class="rs-product-block__info_btns">
 										<a href="#" class="rs-btn _btn-primary">Добавить в корзину</a>
-										<a href="#" class="rs-btn _btn-white">Консультация специалиста</a>
+										<a href="#" class="rs-btn _btn-white" data-popup="#consult">Консультация
+											специалиста</a>
 									</div>
 								</div>
 							</form>
@@ -711,6 +712,49 @@
 				</div>
 			</div>
 		</footer>
+
+		<div id="consult" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__text">
+						<h4>Оставьте заявку для консультации</h4>
+						<form action="#" method="post" class="form__form">
+							<div class="form__wrapper">
+								<div class="form__block">
+									<div class="form__line">
+										<input type="text" name="form[]" required class="rs-input" placeholder="Имя">
+									</div>
+									<div class="form__line">
+										<input type="tel" name="form[]" required class="rs-input" placeholder="Телефон">
+									</div>
+									<div class="form__line">
+										<input type="email" name="form[]" required class="rs-input"
+											placeholder="E-mail">
+									</div>
+									<div class="form__line">
+										<textarea name="form[]" class="rs-input"
+											placeholder="Введите ваше сообщение"></textarea>
+									</div>
+
+									<div class="form__footer">
+										<div class="form__agreement">
+											Нажимая кнопку «Отправить» вы даете
+											согласие на обработку персональных данных в
+											соответствии с <a href="#">пользовательским
+												соглашением</a>.
+										</div>
+										<div class="form__button">
+											<button type="submit" class="rs-btn _btn-primary">Отправить</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	</div>
 

@@ -29,6 +29,7 @@
   background-color: #0f2245;
 }
 .menu-open .rs-header {
+  color: #fff;
   border-radius: 0;
   background-color: #0f2245;
 }
@@ -708,18 +709,20 @@
 .rs-header__action_list li a svg circle.stroke {
   stroke: #000;
 }
-._header-scroll .rs-header__action_list li a svg path.stroke, ._header-transparent .rs-header__action_list li a svg path.stroke,
+._header-scroll .rs-header__action_list li a svg path.stroke, ._header-transparent .rs-header__action_list li a svg path.stroke, .menu-open .rs-header__action_list li a svg path.stroke,
 ._header-scroll .rs-header__action_list li a svg circle.stroke,
-._header-transparent .rs-header__action_list li a svg circle.stroke {
+._header-transparent .rs-header__action_list li a svg circle.stroke,
+.menu-open .rs-header__action_list li a svg circle.stroke {
   stroke: #fff;
 }
 .rs-header__action_list li a svg path.fill,
 .rs-header__action_list li a svg circle.fill {
   fill: #000;
 }
-._header-scroll .rs-header__action_list li a svg path.fill, ._header-transparent .rs-header__action_list li a svg path.fill,
+._header-scroll .rs-header__action_list li a svg path.fill, ._header-transparent .rs-header__action_list li a svg path.fill, .menu-open .rs-header__action_list li a svg path.fill,
 ._header-scroll .rs-header__action_list li a svg circle.fill,
-._header-transparent .rs-header__action_list li a svg circle.fill {
+._header-transparent .rs-header__action_list li a svg circle.fill,
+.menu-open .rs-header__action_list li a svg circle.fill {
   fill: #fff;
 }
 @media (any-hover: hover) {

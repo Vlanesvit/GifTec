@@ -83,7 +83,7 @@
           backdrop-filter: blur(31.1000003815px);
   background: #fff;
 }
-@media (any-hover: hover) {
+@media (min-width: 991.98px) and (any-hover: hover) {
   .rs-product-slider__item:hover .rs-product-slider__img img {
     -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);

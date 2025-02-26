@@ -28,6 +28,7 @@
 	}
 
 	.menu-open & {
+		color: #fff;
 		border-radius: 0;
 		background-color: #0f2245;
 	}
@@ -522,7 +523,8 @@
 								stroke: #000;
 
 								._header-scroll &,
-								._header-transparent & {
+								._header-transparent &,
+								.menu-open & {
 									stroke: #fff;
 								}
 							}
@@ -530,7 +532,8 @@
 								fill: #000;
 
 								._header-scroll &,
-								._header-transparent & {
+								._header-transparent &,
+								.menu-open & {
 									fill: #fff;
 								}
 							}

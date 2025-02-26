@@ -14,12 +14,13 @@
 	// .rs-catalog__banner
 	&__banner {
 		margin-bottom: 83px;
-		height: 428px;
+		min-height: 428px;
 		border-radius: 27px;
 		overflow: hidden;
 		position: relative;
 
 		@include responsive-auto(margin-bottom, (83, 50), (1439.98, 1169.98, 991.98));
+		@include responsive-auto(min-height, (428, 300), (1439.98, 1169.98, 991.98));
 
 		// .rs-catalog__banner_wrapper
 		&_wrapper {
@@ -60,7 +61,10 @@
 
 		// .rs-catalog__banner_desc
 		&_desc {
-			max-width: 800px;
+			margin-top: 20px;
+			@media (min-width: 991.98px) {
+				max-width: 54.5%;
+			}
 
 			h3 {
 				letter-spacing: 0.02em;
@@ -164,6 +168,7 @@
 						// line-height: 23px;
 						line-height: 130%;
 						padding: 20px;
+						color: #282828;
 
 						@media (max-width: 1439.98px) {
 							font-size: 14px;
@@ -219,6 +224,7 @@
 									line-height: 130%;
 									transition: all 0.3s ease 0s;
 									padding: 20px;
+									color: #282828;
 
 									@media (max-width: 1599.98px) {
 										font-size: 14px;
@@ -244,6 +250,7 @@
 												// line-height: 21px;
 												line-height: 130%;
 												transition: color 0.3s ease 0s;
+												color: #282828;
 
 												@media (max-width: 1599.98px) {
 													font-size: 14px;
@@ -321,7 +328,7 @@
 					font-size: 16px;
 					// line-height: 24px;
 					line-height: 150%;
-					color: #6f6f6f;
+					color: #282828;
 					cursor: pointer;
 
 					@media (max-width: 1599.98px) {
@@ -412,6 +419,16 @@
 	border-radius: 27px;
 	padding: 20px;
 
+	@media (any-hover: hover) {
+		&:hover {
+			.rs-product__img {
+				img {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+
 	// .rs-product__item
 	&__item {
 		display: flex;
@@ -432,6 +449,7 @@
 			position: absolute;
 			top: 0;
 			left: 0;
+			transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
 		}
 	}
 
@@ -442,6 +460,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		color: #282828;
 
 		// .rs-product__desc_head
 		&_head {

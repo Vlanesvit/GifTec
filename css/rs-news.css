@@ -269,6 +269,7 @@
 }
 .rs-news__desc_body h4 {
   letter-spacing: 0px;
+  color: #282828;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
